@@ -10,6 +10,15 @@
         <img src="../../assets/gameplay.png" id="image" align="center">
       </div>
 
+    <div id="news">
+      <div v-for="(tweet, index) in $store.state.news" key="index">
+        <el-card class="box-card">
+          <div class="text item">
+            {{ tweet }}
+          </div>
+        </el-card>
+      </div>
+    </div>
 
 
 
@@ -64,7 +73,8 @@ export default {
   },
   methods: {
     ...mapActions([
-      'add'
+      'add',
+      'tweet'
     ]),
     login: (form) => {
       axios.post(`http://localhost:3000/players/signin`, form)
@@ -76,6 +86,9 @@ export default {
         // alert(err.message)
       })
     }
+  },
+  created(){
+    this.$store.dispatch('tweet')
   }
 }
 </script>
@@ -98,6 +111,9 @@ export default {
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;
     -animation: neon1 1.5s ease-in-out infinite alternate;
+  }
+  #news {
+
   }
   #logo {
     width: 33%;

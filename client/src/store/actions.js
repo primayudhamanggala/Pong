@@ -39,3 +39,13 @@ export const remove = ({commit}, playerId) => {
     alert(err.message)
   })
 }
+
+export const tweet = ({commit}) => {
+  axios.get(`http://localhost:3000/tweet/news`)
+  .then((response) => {
+    commit(types.TWEET, response.data)
+  })
+  .catch((err) => {
+    alert(err.message)
+  })
+}

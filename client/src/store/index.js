@@ -6,7 +6,8 @@ import * as actions from './actions'
 Vue.use(Vuex)
 
 const state = {
-  players: []
+  players: [],
+  news: []
 }
 
 

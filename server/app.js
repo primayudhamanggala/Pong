@@ -32,7 +32,9 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const player = require('./routes/player')
+const tweet = require('./routes/tweet')
 
 app.use('/players', player)
+app.use('/tweet', tweet)
 
 app.listen(process.env.PORT || 3000)

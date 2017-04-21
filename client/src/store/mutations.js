@@ -20,6 +20,10 @@ export const mutations = {
     state.players = state.players.filter(player =>
       player._id != payload._id
     )
+  },
+
+  [types.TWEET] (state, payload) {
+    state.news = payload
   }
 
 }
