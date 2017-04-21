@@ -1,0 +1,28 @@
+{
+  "name": "pong",
+  "version": "1.0.0",
+  "description": "Classic Pong Game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primayudhamanggala/Pong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/primayudhamanggala/Pong/issues"
+  },
+  "homepage": "https://github.com/primayudhamanggala/Pong#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.2",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.5",
+    "password-hash": "^1.2.2"
+  }
+}
