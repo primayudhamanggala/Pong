@@ -10,7 +10,7 @@
         <img src="../../assets/gameplay.png" id="image" align="center">
       </div>
 
-    <div id="news">
+    <!-- <div id="news">
       <div v-for="(tweet, index) in $store.state.news" key="index">
         <el-card class="box-card">
           <div class="text item">
@@ -18,7 +18,7 @@
           </div>
         </el-card>
       </div>
-    </div>
+    </div> -->
 
 
 
